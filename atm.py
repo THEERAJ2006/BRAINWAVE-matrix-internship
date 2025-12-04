@@ -1,5 +1,6 @@
 class ATM:
-    def _init_(self, user_pin, user_balance=0):
+    def __init__(self, user_pin, user_balance=0):
+
         self.pin = user_pin
         self.balance = user_balance
 
@@ -68,5 +69,5 @@ def main():
             print("Invalid choice. Try again.")
 
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
